@@ -1,0 +1,431 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+    /* overflow-x: hidden; */
+}
+h1,h2,h3,p{
+    line-height: 0.8;
+}
+a{
+    text-decoration: none;
+}
+#nav_bar{
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    z-index: 1;
+}
+.containar{
+    width: 1320px;
+    margin: 0 auto;
+    align-items: center;
+    justify-items: center;
+
+}
+.nav_rapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
+}
+.logo{
+    width: 20%;
+    margin-right: 0px;
+}
+.menu{
+    width: 60%;
+
+}
+.nav_btn{
+    width: 20%;
+    text-align: right;
+
+}
+.menu ul{
+    align-items: center;
+    top: 80px;
+}
+.menu > ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    column-gap: 50px;   
+}
+.dropdown{
+   display: flex;
+   flex-direction: column;
+   opacity: 0; 
+   row-gap: 15px;
+   visibility: hidden;
+   position: absolute;
+   background-color: #0C3543;
+   width: 160px;
+   left: 44.5%;
+   border-radius: 8px;
+   border: 1px solid rgb(204, 204, 204);  
+}
+.dropdown > ul li{
+    position: relative;  
+}
+.menu > ul li:hover .dropdown{
+    opacity: 1;
+    visibility: visible;
+}
+.menu ul li a{
+    width: 800px;
+    font-size: 20px;
+    text-transform: capitalize;
+    color:rgb(255, 255, 255) ;
+    transition: all linear 0.3s;
+   
+}
+.menu ul li{
+    list-style-type: none;
+    
+}
+.common_btn{
+    display: inline-block;
+    padding: 18px 50px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    border-radius: 4px;
+    transition: all linear 0.3s;
+    background-color: aliceblue;
+}
+.common_btn:hover{
+    color: #fff;
+    background-color:#FF9600 ;
+}
+
+}
+.containar{
+    width: 20%;
+    text-align: right;
+    text-transform: capitalize; 
+}
+
+.common_btn a{
+    background-color: rgb(49, 116, 174);
+    padding: 20px 60px;
+    border-radius: 7px;
+    font-size: 20px;
+    width: 800px;
+    transition: all linear 0.3s;
+}
+
+.menu ul li a:hover{
+    color:#FF9600 ;
+}
+.menu ul li a i{
+    margin: 5px;
+    transition: all linear 0.3s;
+}
+.menu > ul li:hover i{
+    transform: rotate(-90deg);
+}
+
+/* ======= nav bar end here ==== */
+
+/* ====== banner start here ==== */
+#banner{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../image/cristina-anne-costello-1inHyOLSaJo-unsplash\ \(1\).jpg);
+    padding: 250px 0px 155px 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.banner_rapper h1{
+    color: #fff;
+    font-size: 72px;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width:820px;
+    line-height: 140%;
+    text-align: center;
+}
+.banner_btn{
+    justify-content: center;
+    align-content: center;
+    column-gap: 20px;
+    display: flex;
+    margin-top: 40px;
+}
+.banner_shape{
+    position: absolute;
+    bottom: -4px;
+    left: 0px;
+    width: 100%;
+    overflow-x: hidden;
+}
+#about{
+    padding: 72px 0 85px 0;
+
+}
+.about_rapper{
+    column-gap: 24px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.about_contact{
+    width: 648px;
+
+    
+}
+.about_img{
+    width: 648px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 48px;
+    
+}
+.about_img .img_box{
+    height: 620px;
+    width: 300px;
+    border-radius: 5px;
+    justify-content: right;
+    align-items: center;
+    overflow: hidden;
+    
+}
+.about_img .img_box:last-child{
+   height: 520px;
+  
+}
+.about_img .img_box img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    /* padding-right: 60px; */
+   
+}
+
+
+.sub_heading{
+    width: 400;
+    font-size: 30px;
+    font-family: 'Yellowtail', cursive;
+    color:#14B9F1;   
+}
+.about_h2{
+    width: 648;
+    font-size: 54px;
+    line-height: 140%;
+    padding: 5px 0 62px 0;
+    position: relative;
+
+}
+.about_h2::after{
+    position: absolute;
+    left: 0;
+    bottom:20px;
+    background-color:#A0A0A0 ;
+    content:"";
+    height: 3px;
+    width: 80px;
+}
+.pera{
+    width: 648px;
+    font-size: 22px;
+    line-height: 140%;
+    color: #222;
+    margin-bottom: 40px;
+    display: flex;
+} 
+.about_contact li{
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+  justify-items: center;
+  /* flex-direction: column; */
+}
+
+.about_contact ul{
+    justify-items: center;
+    row-gap: 0px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+ 
+}
+.round{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #EEE;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  margin-top: -36px;
+
+}
+.activitice_box{
+    width:312px;
+    height: 220px;
+    border-radius: 4px;
+    background-color: #FFF4E5;
+    margin-top: 80px;
+  
+}
+.activitice_box .box-1 p{
+    text-align: center;
+    align-items: center;
+    
+}
+.box-1 p{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* margin: 40px; */
+    /* line-height: 220px; */
+    font-weight: 700;
+    padding-top:40px 84px 76px 84px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.box-1 .bold{
+    font-size: 80px;
+    padding: 48px 0 25px 0px;
+    
+}
+.box_containar{
+    display: flex;
+    column-gap: 24px;
+}
+
+/* ====== banner start here ==== */
+/* ==== sports activities stared here==== */
+#sport_activities{
+    width: 1920px;
+    /* height: 1834px; */
+    background-color:#0C3543;
+    padding: 120px 300px 0 300px;
+    position: relative;
+    
+}
+.sports_rapper{
+    width: 100%;
+    height: 1834px;
+}
+.sports_rapper .display{
+    display: flex;
+    column-gap: 150px;
+    width: 100%;
+
+}
+.sports_p{
+    font-family: 'Arizonia', cursive;
+   font-size: 160px;
+   font-weight: 400px;
+   color: #EEE; 
+   padding-top: 83px;
+   text-align: center;
+}
+.sports_shape{
+    position: absolute;
+    bottom: -4px;
+    left: 0px;
+    width: 100%;
+    overflow-x: hidden; 
+}
+/* ==== sports activities end here==== */
+
+/* ==== sports demo end here==== */
+#sports_demo{
+   width: 1920px;
+   height: 1062px;
+   background-color: #FF9600;
+   
+}
+.sports_demo_rapper {
+    width: 1320px;
+    color: #EEE;
+    line-height: 140%;
+    text-align: center;
+    padding-top: 100px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    
+    
+}
+.dmeo_btn a{
+    row-gap: 35px;
+    column-gap: 35px;
+    border:1px solid rgb(152, 152, 152);
+}
+.dmeo_btn a:hover{
+    background-color: #030709;
+    color: #ffffff;
+    transition: all linear 0.5s;
+}
+.dmeo_btn a i{
+    margin-right: 8px;
+}
+.dmeo_btn a:hover i{
+    color: #FF9600;
+}
+.sports_img{
+    padding-top:100px;
+}
+/* ==== sports demo end here==== */
+
+/* === footer stared here === */
+#footer{
+    width: 1920px;
+    height: 705px;
+    background-color: #0C3543;
+}
+.footer_rapper{
+    display: flex;
+}
+.footer_img{
+    width: 660px;
+    height: 705px;   
+}
+.footer_contant{
+    width: 1260;
+    height: 705px;
+    padding: 80px 300px 60px 130px;
+   
+}
+.footer_contant img{
+    padding-top: 80px;
+}
+.footer_p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%;
+    width: 500px;
+    
+
+}
+.footer_logo img{
+    padding-bottom:50px;
+}
+.footer_flex a{
+    width: 205px;
+    height: 60px;
+    padding: 20px 45px;
+    font-weight: 600;
+}
+.footer_flex{
+    display: flex;
+    column-gap: 50px;
+}
+/* === footer stared here === */
+
+
+
+
